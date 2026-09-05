@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Tonsole.GGs
 
-## Project info
+A modern, fast, and responsive web application for discovering and exploring games. Tonsole.GGs offers an intuitive interface to browse through a library of classic and popular games, complete with an engaging animated user interface and detailed game profiles.
 
-**URL**: https://lovable.dev/projects/dac2fc40-3f41-4700-a546-73f7744b5e4d
+## Features
 
-## How can I edit this code?
+- **Interactive Game Library**: Browse a curated list of games with smooth hover-to-flip card animations.
+- **Real-time Search**: Instantly filter games by title or description.
+- **Detailed Game Profiles**: View in-depth information about individual games through dedicated detail pages.
+- **Modern User Interface**: Designed with Tailwind CSS and shadcn/ui, featuring glassmorphism elements, custom animations, and responsive layouts.
+- **Optimized Performance**: Built on top of Vite and React for lightning-fast loading and hot module replacement during development.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **Routing**: React Router
+- **Styling**: Tailwind CSS
+- **Component Library**: shadcn/ui (Radix UI primitives)
+- **State Management**: React Query (TanStack Query)
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dac2fc40-3f41-4700-a546-73f7744b5e4d) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Ensure you have Node.js and npm installed. We recommend using a node version manager like `nvm` to manage your Node.js versions.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd Tonsole
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install the dependencies:
+   ```sh
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+The application will be available at `http://localhost:5173` (or the port specified by Vite in your terminal).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Project Structure
 
-**Edit a file directly in GitHub**
+- `/src/components`: Reusable UI components, including the interactive `GameCard` and shadcn/ui primitives.
+- `/src/pages`: Main application views (`Index.tsx` for the home page, `GameDetail.tsx` for game-specific views, and `NotFound.tsx`).
+- `/src/hooks`: Custom React hooks.
+- `/src/lib`: Utility functions and helper classes.
+- `/src/App.tsx`: Main application component configuring routing and global providers.
+- `/src/index.css`: Global styles, Tailwind directives, and custom animation keyframes.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev`: Starts the local development server.
+- `npm run build`: Compiles the application for production.
+- `npm run preview`: Bootstraps a local web server to preview the production build.
+- `npm run lint`: Runs ESLint to statically analyze the code and find problems.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This project is built with:
+## License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dac2fc40-3f41-4700-a546-73f7744b5e4d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open-source.
